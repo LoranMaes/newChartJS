@@ -1,14 +1,27 @@
 body{
+    position: relative;
     background: #2C2C2C;
     font-family: "Poppins", "Sans-Serif";
     color: #FFFF;
 }
 
-h1{
+h1,
+p{
     text-align: center;
 }
 
+h1{
+    margin-bottom: 0;
+}
+
+p.low{
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+    opacity: .25;
+}
+
 .container{
+    position: relative;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -17,6 +30,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container .chart{
@@ -29,4 +43,36 @@ h1{
 
 .container .chart h2{
     text-align: center;
+}
+
+#total-students .header-total-students{
+    font-weight: 500;
+    color: rgb(207, 19, 60);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #444;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(15, 15, 15);
+  }
+
+.snail-gif{
+    position: absolute;
+    width: 12.5%;
+    right: 0;
+    top: -2.5rem;
 }
